@@ -6,7 +6,7 @@ function App() {
   const url = 'http://futuramaapi.herokuapp.com/api/v2/characters'
   const [info, setInfo] = useState()
 
-  const fetchCharacters = async () => {
+  const fetchCharacters = () => {
     const response = await fetch(url)
     const responseJSON = await response.json()
     setInfo(responseJSON)

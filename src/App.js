@@ -52,7 +52,7 @@ function App() {
                                   <hr />
                                   <div className="field-row-stacked" style={{width: "200px"}}>
                                     <label>Age</label>
-                                    <textarea oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' readOnly value={info.Age}></textarea>
+                                    <textarea onInput='this.style.height = "";this.style.height = this.scrollHeight + "px"' readOnly value={info.Age}></textarea>
                                     <label>Planet</label>
                                     <input type="text" value={info.Planet} readOnly/>
                                     <label>Status</label>
